@@ -1,47 +1,25 @@
 import 'package:flutter/material.dart';
 
+import '../home_details_view/custome_book_item.dart';
+import 'custome_book_details_app_bar.dart';
+
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
+    var width = MediaQuery.of(context).size.width;
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
         children: [
-          CustomeBokkDetailsAppBar(),
-
-          
+          const CustomeBookDetailsAppBar(),
+          Padding(
+            padding:  EdgeInsets.symmetric(horizontal: width*.17),
+            child: const CustomeBookItem(),
+          ),
         ],
       ),
     );
-  }
-}
-
-
-class CustomeBokkDetailsAppBar extends StatelessWidget {
-  const CustomeBokkDetailsAppBar ({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-          padding:  EdgeInsets.only(top: 55,bottom: 20),
-          child: Row(
-            children: [
-                           IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    (Icons.close),
-                    size: 24,
-                  )),
-               Spacer(),
-              IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    (Icons.shopping_cart),
-                    size: 24,
-                  )),
-            ],
-          ),
-        );
   }
 }
