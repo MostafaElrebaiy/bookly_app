@@ -1,10 +1,10 @@
 import 'package:bookly_app/core/utils/stlyes.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/best_seller_item.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/custome_appbar.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/featured_books_list_view.dart';
+
 import 'package:flutter/material.dart';
 
 import 'best_seller_list_view.dart';
+import 'custome_appbar.dart';
+import 'featured_books_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -38,14 +38,13 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
         ),
-          SliverFillRemaining(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: BestSellerListView(),
-      ),
-    ),
+        SliverFillRemaining(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: BestSellerListView(),
+          ),
+        ),
       ],
     );
-  
   }
 }
