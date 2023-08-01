@@ -9,7 +9,7 @@ class CustomeBookItem extends StatelessWidget {
     return Container(
       color: Colors.amber,
       child: AspectRatio(
-        aspectRatio:2.7/4 ,
+        aspectRatio:2.6/3.7 ,
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
