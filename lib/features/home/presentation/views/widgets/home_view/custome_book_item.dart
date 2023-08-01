@@ -7,12 +7,11 @@ class CustomeBookItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.amber,
       child: AspectRatio(
-        aspectRatio:2.6/3.7 ,
+        aspectRatio:2.8/4 ,
         child: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
               image: const DecorationImage(
                 fit: BoxFit.fill,
                   image: AssetImage(
